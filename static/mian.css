@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+    }
+    
+html {
+    background: no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.row{
+   font-size: 40px;
+   box-shadow: 1px 1px grey;
+   background-color: #b7f2b0;
+   text-align: center;
+}
+
+.info {
+  font-size: 15px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 17px;
+}
+
+
+.card {
+  display: block;
+  position: relative;
+  z-index: 1000;
+  width: 200px; 
+  height: 450px;
+  background-color: #49dd81;
+  cursor: pointer;
+  float: left;
+  font-weight: bold;
+  margin: 10px;
+  min-width: 100px;
+  max-width: 400px;
+  font-size: 14px;
+
+}
+
+.card-action {
+  position: relative;
+  bottom: 0;
+  
+}
+
