@@ -2,119 +2,144 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: #003300;
-  margin-bottom: 40px;
-  font-size: 25px;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav {
+  background-color: white;
+  color: black;
+  list-style: none;
+  text-align: right;
+  padding: 20px 0 0px 0;
+  font-family: Roboto;
+}
+
+.nav > li {
+  display: inline-block;
+  padding-right: 100px;
+
+}
+
+
+.nav > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav > li > a:hover {
+  color: #c1c1c1;
+  
+}
+
+.logo {
+  color: black;
+  float: left;
+  padding-left: 1px;
+  font-size: 55px;
+  font-weight: bold;
+    
+}
+
+.logo > a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.banner {
+  width:100%;
+  display: block;
+}
+
+
+.banner > .banner-image {
+  width:100%;
+  display: block;
+  
+}
+
+.civ-types {
+max-width: 298px;
+border: 1px solid #c1c1c1;
+margin: 20px 10px;
+padding: 0 5px;
+float: left;
+  
+}
+
+
+.civ-types > p {
+  color: #636363;
+  max-width: 250px;
+  font-family: Roboto;
+}
+
+.types {
+  width: 2100px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
   color: white;
+  padding: 10px 0;
+  margin: 0 -6px;
+  font-family: Audiowide;
+}
+
+#a1 {
+  background-image: url("../static/img/citadel.jpg"); &nbsp;
+}
+#a2 {
+  background-image: url("../static/img/type0.jpg"); &nbsp;
+}
+#a3 {
+  background-image: url("../static/img/type1.jpg"); &nbsp;
+}
+#a4 {
+  background-image: url("../static/img/type2.jpg"); &nbsp;
+}
+#a5 {
+  background-image: url("../static/img/type3.jpg"); &nbsp;
+}
+#a6 {
+  background-image: url("../static/img/type4.jpg"); &nbsp;
+}
+#a7 {
+  background-image: url("../static/img/type5.jpg"); &nbsp;
+}
+
+.image {
+  max-width: 200px;
+  margin: 15px 0 0 0;
+  
+}
+
+
+.image:hover {
+  opacity: 0.5;
+  max-width: 200px;
+  margin-top: 15px;
+}
+
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  
+  
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: #252525;
   font-size: 22px;
-  background-color: green;
-  
-}
-
-header h1 {
-  line-height: 1;
-  margin-bottom: 0;
-}
-
-header p {
-  margin-top: 0.5em;
-  
-}
-
-.card {
-  border: 1px solid #E5E5E5;
-  margin-bottom: 20px;
-  background-color: white;
-  
-}
-
-.card-image {
-  width: 100%;
-  }
-
-.card-content {
-  padding: 10px;
-}
-
-.card-content h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.card-content p {
-  margin: 0.5em 0;
 }
 
 
-
-
-
-
-
-.row {
-  max-width: 1000px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-/* Clearfix */
-.row::before,
-.row::after {
-  display: table;
-  content: '';
-}
-
-.row::after {
-  clear: both;
-}
-
-.col-3, .col-4, .col-6, .col-12 {
-  float: left;
-
-  /* Gutters:
-   * Each column is padded by half-a-gutter on each side,
-   *
-   * Half a gutter is 10px, 10/960 (context) = 1.041666%
-   *
-   */
-  padding-left: 1.04166666%;
-  padding-right: 1.04166666%;
-}
-
-/* Mobile defaults */
-.col-3, .col-4, .col-6, .col-12 {
-  width: 100%;
-}
-
-
-/* Non-mobile, grid */
-@media only screen and (min-width: 640px) {
-  /* 3 columns, 3/12 in % */
-  .col-3 {
-    width: 25%;
-  }
-
-  /* 4 columns, 4/12 in % */
-  .col-4 {
-    width: 33.333333%;
-  }
-
-  /* 6 columns, 6/12 in % */
-  .col-6 {
-    width: 50%;
-  }
-
-  /* 12 columns, 12/12 in % */
-  .col-12 {
-    width: 100%;
-  }
-}
 
 
