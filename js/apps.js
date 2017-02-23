@@ -1,10 +1,38 @@
-// STEP 1 - get the input from the user
-$(".js-search-form").submit(function (event) {
-    event.preventDefault();
-    var userInput = $("#query").val();
-    //    function call
-    getResults(userInput);
+$(document).ready(function() {
+   $(".js-search-results").hide();
 });
+
+
+function hideContainer() {
+   $(".js-search-results").hide(); 
+};
+
+// STEP 1 - get the input from the user
+function showDetails(civID) {
+
+    var userChoice = "";
+
+    if (civID == 0) {
+        userChoice = "Kardashev Scale type 0";
+    }
+    else if (civID == 1) {
+        userChoice = "Kardashev Scale type 1";
+    }
+    else if (civID == 2) {
+        userChoice = "Kardashev Scale type 2";
+    }
+    else if (civID == 3) {
+        userChoice = "Kardashev Scale type 3";
+    }
+    else if (civID == 4) {
+        userChoice = "Kardashev Scale type 4";
+    }
+    else if (civID == 5) {
+        userChoice = "Kardashev Scale type 5";
+    }
+    getResults(userChoice);
+}
+
 
 // STEP 2 - using the input from the user (query) make the API call to get the JSON response
 
@@ -12,13 +40,13 @@ $(".js-search-form").submit(function (event) {
 function getResults(userSearchTerm) {
     $.getJSON("https://www.googleapis.com/youtube/v3/search", {
             part: "snippet",
-            maxResults: 20,
+            maxResults: 2,
             key: "AIzaSyAMUD_BHo3KndZfwnmbo50I9NzIY3RCvk4",
             q: userSearchTerm,
             type: "video"
 
         },
-        function (receivedApiData) {
+        function(receivedApiData) {
             //show the json array received from the API call
             //console.log(receivedApiData);
             // if there are no results it will just empty the list
@@ -40,7 +68,7 @@ function displaySearchResults(videosArray) {
     //create an empty variable to store one LI for each one the results
     var buildTheHtmlOutput = "";
 
-    $.each(videosArray, function (videosArrayKey, videosArrayValue) {
+    $.each(videosArray, function(videosArrayKey, videosArrayValue) {
         //create and populate one LI for each of the results ( "+=" means concatenate to the previous one)
         buildTheHtmlOutput += "<li>";
         buildTheHtmlOutput += "<p>" + videosArrayValue.snippet.title + "</p>"; //output vide title
@@ -50,5 +78,6 @@ function displaySearchResults(videosArray) {
         buildTheHtmlOutput += "</li>";
     });
 
-    $(".js-search-results").html(buildTheHtmlOutput);
+    $(".js-search-results ul").html(buildTheHtmlOutput);
+    $(".js-search-results").show();
 }

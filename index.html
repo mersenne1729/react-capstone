@@ -19,34 +19,21 @@
     <title>Kardashev scale</title>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./static/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 
 </head>
 
 <body>
 
-    <!-- Nav Bar -->
-    <ul class="nav">
-
-        <!-- Logo -->
-        <div class="logo">
-            <a href="#">Kardashev Scale</a>
-        </div>
-
-        <!-- End Logo -->
-
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About The Scale</a></li>
-        <li><a href="#">Fun Stuff</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+    <!-- Logo -->
+        
+<div id="app"></div>
 
     <!-- End Nav Bar -->
 
     <!-- Banner -->
     <div class="banner">
-        <img class="banner-image" href="#" src="./static/img/banner.jpg" />
+        <img class="banner-image" href="#" src="./assets/img/banner.jpg" />
     </div>
 
     <!-- End Banner -->
@@ -64,7 +51,7 @@
 
 
     <!-- Search -->
-    
+
     <!--<div class="details">-->
     <!--    <form action="#" class="js-search-form">-->
     <!--        <label for="query"></label>-->
@@ -74,20 +61,21 @@
     <!--</div>-->
 
     <!-- End Search -->
-    
-    
+
+
 
     <!-- Search Results -->
 
 
-    <div class="js-search-results">
+    <div class="js-search-results" onClick="hideContainer()">
+        <ul></ul>
     </div>
 
     <!-- End Search Results -->
 
 
     <!-- Cards -->
-    
+
     <!-- 1st Row -->
     <div class="row">
 
@@ -96,7 +84,7 @@
             <div class="civ-types">
                 <h1 id="a2">Type 0 <br>Planetary <br> Civilization </h1>
                 <a href="#">
-                    <div class="image-wrapper" style="background-image: url('./static/img/type0.jpg')"> </div>
+                    <div class="image-wrapper" style="background-image: url('./assets/img/type0.jpg')"> </div>
                 </a>
                 <p>A civilization that harnesses the energy of its home planet, but not to its full potential just yet. As you might have guessed, that’s our good old human selves. We’re currently at about 0.73 on the Kardashev Scale. It is presumed we’ll
                     reach type I in about 100 years, give or take, depending on how fast our technology advances and how diligently we procreate.</p>
@@ -108,7 +96,7 @@
             <div class="civ-types">
                 <h1 id="a3">Type 1 <br> Interplanetary <br> Civilization </h1>
                 <a href="#">
-                    <div class="image-wrapper" style="background-image: url('./static/img/type1.jpg')"> </div>
+                    <div class="image-wrapper" style="background-image: url('./assets/img/type1.jpg')"> </div>
                 </a>
                 <p>A civilization that is capable of harnessing the total energy of its home planet. This is where we’re heading, whether we want it or not. The good part would be that we’d achieve an ultimate peak, the bad part is that we’d then soon have
                     more energy demand than supply, because evolution can’t be so easily halted. We’d have to leave Earth and start pumping other planets for their worth, or even milk our own star directly for its power.</p>
@@ -120,7 +108,7 @@
             <div class="civ-types">
                 <h1 id="a4">Type 2 <br> Interstellar <br> Civilization </h1>
                 <a href="#">
-                    <div class="image-wrapper" style="background-image: url('./static/img/type2.jpg')"> </div>
+                    <div class="image-wrapper" style="background-image: url('./assets/img/type2.jpg')"> </div>
                 </a>
                 <p>A civilization capable of harnessing the energy radiated by its own star--for example, the stage of successful construction of a Dyson sphere--with energy consumption at ≈4×1033 erg/sec. Lemarchand stated this as a civilization capable
                     of utilizing and channeling the entire radiation output of its star. The energy utilization would then be comparable to the luminosity of our Sun, about 4×1033 erg/sec (4×1026 watts).</p>
@@ -139,7 +127,7 @@
             <div class="civ-types">
                 <h1 id="a5">Type 3 <br> Intergalactic <br> Civilization </h1>
                 <a href="#">
-                    <div class="image-wrapper" style="background-image: url('./static/img/type3.jpg')"> </div>
+                    <div class="image-wrapper" style="background-image: url('./assets/img/type3.jpg')"> </div>
                 </a>
                 <p>A civilization in possession of energy on the scale of its own galaxy, with energy consumption at ≈4×1044 erg/sec. Lemarchand stated this as a civilization with access to the power comparable to the luminosity of the entire Milky Way galaxy,
                     about 4×1044 erg/sec (4×1037 watts).</p>
@@ -150,7 +138,7 @@
             <div class="civ-types">
                 <h1 id="a6">Type 4 <br> Universal <br> Civilization </h1>
                 <a href="#">
-                    <div class="image-wrapper" style="background-image: url('./static/img/type4.jpg')"> </div>
+                    <div class="image-wrapper" style="background-image: url('./assets/img/type4.jpg')"> </div>
                 </a>
                 <p>A universal civilization, capable of harnessing the energy of the whole universe. This civilization would be supergalactic, able to travel throughout the entire universe and consume the energy output of several—possibly all—galaxies. Think
                     of that real estate size! It would also be capable of projects of gargantuan proportions, such as manipulating space-time and tinkering with entropy, thus reaching immortality on a grand scale. An essentially indestructible and highly
@@ -162,7 +150,7 @@
             <div class="civ-types">
                 <h1 id="a7">Type 5 <br> Time <br> Loards+ </h1>
                 <a href="#">
-                    <div class="image-wrapper" style="background-image: url('./static/img/type5.jpg')"> </div>
+                    <div class="image-wrapper" style="background-image: url('./assets/img/type5.jpg')"> </div>
                 </a>
                 <p>Even more abstract is the type VI civilization. The type VI exists outside of time and space, and is capable of creating universes and multiverses, and destroying them just as easily. It’s similar in concept to a deity. It’s hard to imagine
                     a story with such a civilization, since its perfection and indestructible nature would offer little conflict potential. Unless, of course, you’re a lower type civilization waiting to be chewed, swallowed, and digested by one such type
@@ -178,10 +166,9 @@
 
     <!-- Scripts -->
 
-    <script src="/index.js"></script>
-    <script src="apps.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-
+    <script src="./js/apps.js"></script>
 
 </body>
 
