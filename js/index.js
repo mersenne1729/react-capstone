@@ -4,7 +4,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Provider = require('react-redux').Provider;
 
-var Logo = require('./components/logo');
+var Logo = require('../js/components/logo');
 
 document.addEventListener('DOMContentLoaded', function() {
     ReactDOM.render(<Logo />, document.getElementById('app'));

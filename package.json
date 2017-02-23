@@ -20,7 +20,8 @@
             "_watch:html": "chokidar index.html -c \"npm run build:html\"",
             "clean:js": "rimraf build/js",
             "mkdir:js": "mkdirp build/js",
-            "build:js": "run-s clean:js mkdir:js _build:js",
+            "build:js": "run-s clean:js mkdir:js _build:js build-static:js",
+            "build-static:js": "cpr js build/js",
             "_build:js": "webpack",
             "watch:js": "run-s build:js _watch:js",
             "_watch:js": "webpack --watch",
@@ -70,10 +71,10 @@
       },
       "dependencies": {
             "isomorphic-fetch": "^2.2.1",
-            "react": "^15.3.1",
-            "react-dom": "^15.3.1",
+            "react": "^15.4.2",
+            "react-dom": "^15.4.2",
             "react-addons": "^0.9.1-deprecated",
-            "react-addons-test-utils": "^15.3.2",
+            "react-addons-test-utils": "^15.4.2",
             "react-redux": "^4.4.5",
             "redux": "^3.6.0",
             "redux-thunk": "^2.1.0"
