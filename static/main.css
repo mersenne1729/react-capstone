@@ -17,6 +17,8 @@ body {
   text-align: right;
   padding: 20px 0 0px 0;
   font-family: Roboto;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .nav>li {
@@ -49,11 +51,22 @@ body {
 .banner {
   width: 100%;
   display: block;
-}
+ }
 
 .banner>.banner-image {
   width: 100%;
   display: block;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner>.banner-image:hover {
+  opacity: 0.5;
+  margin-top: 15px;
 }
 
 
@@ -90,6 +103,7 @@ body {
   margin: 0.5%;
   padding: 0;
   cursor: pointer;
+ box-shadow: 10px 10px 5px #c1c1c1;
 }
 
 .civ-types {
@@ -99,7 +113,7 @@ body {
 
 }
 .civ-types .image-wrapper{
-  margin-top: 30px;
+    margin-top: 30px;
     margin-left: 0;
     margin-right: 0;
     height: 200px;
@@ -157,16 +171,8 @@ h1 {
   background-image: url("../static/img/type5.jpg")
 }
 
-.image {
-  max-width: 300px;
-  margin: 15px 0 0 0;
-}
 
-.image:hover {
-  opacity: 0.5;
-  max-width: 300px;
-  margin-top: 15px;
-}
+
 
 h2 {
   text-align: center;
