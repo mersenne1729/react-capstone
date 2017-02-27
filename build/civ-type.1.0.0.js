@@ -53,9 +53,19 @@
 	var Provider = __webpack_require__(479).Provider;
 	
 	var Logo = __webpack_require__(519);
+	var Banner = __webpack_require__(520);
+	var Intro = __webpack_require__(521);
+	var Cards = __webpack_require__(521);
 	
 	document.addEventListener('DOMContentLoaded', function () {
-	    ReactDOM.render(React.createElement(Logo, null), document.getElementById('app'));
+	    ReactDOM.render(React.createElement(
+	        'div',
+	        null,
+	        React.createElement(Logo, null),
+	        React.createElement(Banner, null),
+	        React.createElement(Intro, null),
+	        React.createElement(Cards, null)
+	    ), document.getElementById('app'));
 	});
 
 /***/ },
@@ -31841,21 +31851,55 @@
 	};
 	
 	module.exports = Logo;
+
+/***/ },
+/* 520 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
 	
-	// var Person = function() {
-	//     var name = 'Derek Zoolander';
-	//     var imageUrl = 'http://uifaces.com/assets/static/images/zoolander.jpg';
-	//     var job = 'Male model';
-	//     return (
-	//         <div className="person">
-	//             <div className="person-name">{name}</div>
-	//             <img className="person-img" src={imageUrl} />
-	//             <div className="person-job">
-	//                 {job}
-	//             </div>
-	//         </div>
-	//     );
-	// };
+	var React = __webpack_require__(298);
+	var ReactDOM = __webpack_require__(328);
+	
+	var Banner = function Banner() {
+	
+	    return React.createElement(
+	        'div',
+	        { className: 'banner' },
+	        React.createElement('img', { 'class': 'banner-image', href: '#', src: './assets/img/banner.jpg' })
+	    );
+	};
+	
+	module.exports = Banner;
+
+/***/ },
+/* 521 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(298);
+	var ReactDOM = __webpack_require__(328);
+	
+	var Intro = function Intro() {
+	
+	    return React.createElement(
+	        'div',
+	        { className: 'intro' },
+	        React.createElement(
+	            'h1',
+	            { id: 'a1' },
+	            'About The Scale '
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'The Kardashev scale is a method of measuring a civilization\'s level of technological advancement, based on the amount of energy a civilization is able to use for communication.The scale is hypothetical, and regards energy consumption on a cosmic scale. It was proposed in 1964 by the Soviet astronomer Nikolai Kardashev. Various extensions of the scale have since been proposed, including a wider range of power levels (types 0, IV and V) and the use of metrics other than pure power.'
+	        )
+	    );
+	};
+	
+	module.exports = Intro;
 
 /***/ }
 /******/ ]);
