@@ -1,6 +1,17 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+var Logo = function() {
+    
+    return (
+      <div className="logo">
+            <a href="#">Kardashev Scale</a>
+        </div>
+    );
+};
+
+module.exports = Logo;
+
 // var Person = function() {
 //     var name = 'Derek Zoolander';
 //     var imageUrl = 'http://uifaces.com/assets/static/images/zoolander.jpg';
@@ -15,14 +26,3 @@ var ReactDOM = require('react-dom');
 //         </div>
 //     );
 // };
-
-var Logo = function() {
-    
-    return (
-      <div className="logo">
-            <a href="#">Kardashev Scale</a>
-        </div>
-    );
-};
-
-module.exports = Logo;
