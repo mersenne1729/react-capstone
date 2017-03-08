@@ -248,6 +248,31 @@ h1 {
       background-image: url("../assets/img/type5.jpg")
 }
 
+.civ0 {
+      background-image: url('../assets/img/type0.jpg')
+}
+
+.civ1 {
+      background-image: url('../assets/img/type1.jpg')
+}
+
+.civ2 {
+      background-image: url('../assets/img/type2.jpg')
+}
+
+.civ3 {
+      background-image: url('../assets/img/type3.jpg')
+}
+
+.civ4 {
+      background-image: url('../assets/img/type4.jpg')
+}
+
+.civ5 {
+      background-image: url('../assets/img/type5.jpg')
+}
+
+
 
 /*/////////////// Media Quary ///////////////*/
 

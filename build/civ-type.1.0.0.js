@@ -55,7 +55,7 @@
 	var Logo = __webpack_require__(519);
 	var Banner = __webpack_require__(520);
 	var Intro = __webpack_require__(521);
-	var Cards = __webpack_require__(521);
+	var Cards = __webpack_require__(522);
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	    ReactDOM.render(React.createElement(
@@ -67,6 +67,28 @@
 	        React.createElement(Cards, null)
 	    ), document.getElementById('app'));
 	});
+	
+	// var React = require('react');
+	// var ReactDOM = require('react-dom');
+	
+	// var Person = function() {
+	//     var name = 'Derek Zoolander';
+	//     var imageUrl = 'http://uifaces.com/assets/static/images/zoolander.jpg';
+	//     var job = 'Male model';
+	//     return (
+	//         <div className="person">
+	//             <div className="person-name">{name}</div>
+	//             <img className="person-img" src={imageUrl} />
+	//             <div className="person-job">
+	//                 {job}
+	//             </div>
+	//         </div>
+	//     );
+	// };
+	
+	// document.addEventListener('DOMContentLoaded', function() {
+	//     ReactDOM.render(<Person />, document.getElementById('app'));
+	// });
 
 /***/ },
 /* 1 */
@@ -31866,7 +31888,7 @@
 	    return React.createElement(
 	        'div',
 	        { className: 'banner' },
-	        React.createElement('img', { 'class': 'banner-image', href: '#', src: './assets/img/banner.jpg' })
+	        React.createElement('img', { className: 'banner-image', href: '#', src: './assets/img/banner.jpg' })
 	    );
 	};
 	
@@ -31900,6 +31922,203 @@
 	};
 	
 	module.exports = Intro;
+
+/***/ },
+/* 522 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(298);
+	var ReactDOM = __webpack_require__(328);
+	
+	var Cards = function Cards() {
+	
+	    return React.createElement(
+	        'div',
+	        { className: 'cards' },
+	        React.createElement(
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	                'div',
+	                { className: 'types showDetails-0' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'civ-types' },
+	                    React.createElement(
+	                        'h1',
+	                        { id: 'a2' },
+	                        'Type 0 ',
+	                        React.createElement('br', null),
+	                        ' Planetary  Civilization '
+	                    ),
+	                    React.createElement(
+	                        'a',
+	                        { href: '#' },
+	                        React.createElement(
+	                            'div',
+	                            { className: 'image-wrapper civ0' },
+	                            ' '
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'p',
+	                        null,
+	                        'A civilization that harnesses the energy of its home planet, but not to its full potential just yet. As you might have guessed, that\u2019s our good old human selves. We\u2019re currently at about 0.73 on the Kardashev Scale. It is presumed we\u2019ll reach type I in about 100 years, give or take, depending on how fast our technology advances and how diligently we procreate.'
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'types showDetails-1' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'civ-types' },
+	                    React.createElement(
+	                        'h1',
+	                        { id: 'a3' },
+	                        'Type 1 Interplanetary Civilization '
+	                    ),
+	                    React.createElement(
+	                        'a',
+	                        { href: '#' },
+	                        React.createElement(
+	                            'div',
+	                            { className: 'image-wrapper civ1' },
+	                            ' '
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'p',
+	                        null,
+	                        'A civilization that is capable of harnessing the total energy of its home planet. This is where we\u2019re heading, whether we want it or not. The good part would be that we\u2019d achieve an ultimate peak, the bad part is that we\u2019d then soon have more energy demand than supply, because evolution can\u2019t be so easily halted. We\u2019d have to leave Earth and start pumping other planets for their worth, or even milk our own star directly for its power.'
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'types showDetails-2' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'civ-types' },
+	                    React.createElement(
+	                        'h1',
+	                        { id: 'a4' },
+	                        'Type 2 Interstellar Civilization '
+	                    ),
+	                    React.createElement(
+	                        'a',
+	                        { href: '#' },
+	                        React.createElement(
+	                            'div',
+	                            { className: 'image-wrapper civ2' },
+	                            ' '
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'p',
+	                        null,
+	                        'A civilization capable of harnessing the energy radiated by its own star--for example, the stage of successful construction of a Dyson sphere--with energy consumption at \u22484\xD71033 erg/sec. Lemarchand stated this as a civilization capable of utilizing and channeling the entire radiation output of its star. The energy utilization would then be comparable to the luminosity of our Sun, about 4\xD71033 erg/sec (4\xD71026 watts).'
+	                    )
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	                'div',
+	                { className: 'types showDetails-3' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'civ-types' },
+	                    React.createElement(
+	                        'h1',
+	                        { id: 'a5' },
+	                        'Type 3 Intergalactic Civilization '
+	                    ),
+	                    React.createElement(
+	                        'a',
+	                        { href: '#' },
+	                        React.createElement(
+	                            'div',
+	                            { className: 'image-wrapper civ3' },
+	                            ' '
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'p',
+	                        null,
+	                        'A civilization in possession of energy on the scale of its own galaxy, with energy consumption at \u22484\xD71044 erg/sec. Lemarchand stated this as a civilization with access to the power comparable to the luminosity of the entire Milky Way galaxy, about 4\xD71044 erg/sec (4\xD71037 watts).'
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'types showDetails-4' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'civ-types' },
+	                    React.createElement(
+	                        'h1',
+	                        { id: 'a6' },
+	                        'Type 4 ',
+	                        React.createElement('br', null),
+	                        ' Universal Civilization '
+	                    ),
+	                    React.createElement(
+	                        'a',
+	                        { href: '#' },
+	                        React.createElement(
+	                            'div',
+	                            { className: 'image-wrapper civ4' },
+	                            ' '
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'p',
+	                        null,
+	                        'A universal civilization, capable of harnessing the energy of the whole universe. This civilization would be supergalactic, able to travel throughout the entire universe and consume the energy output of several\u2014possibly all\u2014galaxies. Think of that real estate size! It would also be capable of projects of gargantuan proportions, such as manipulating space-time and tinkering with entropy, thus reaching immortality on a grand scale. An essentially indestructible and highly utopian civilization.'
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'types showDetails-5' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'civ-types' },
+	                    React.createElement(
+	                        'h1',
+	                        { id: 'a7' },
+	                        'Type 5 ',
+	                        React.createElement('br', null),
+	                        ' Time ',
+	                        React.createElement('br', null),
+	                        ' Loards+ '
+	                    ),
+	                    React.createElement(
+	                        'a',
+	                        { href: '#' },
+	                        React.createElement(
+	                            'div',
+	                            { className: 'image-wrapper civ5' },
+	                            ' '
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'p',
+	                        null,
+	                        'Even more abstract is the type VI civilization. The type VI exists outside of time and space, and is capable of creating universes and multiverses, and destroying them just as easily. It\u2019s similar in concept to a deity. It\u2019s hard to imagine a story with such a civilization, since its perfection and indestructible nature would offer little conflict potential. Unless, of course, you\u2019re a lower type civilization waiting to be chewed, swallowed, and digested by one such type VI monstrosity. Recipe for paraversal tragedy.'
+	                    )
+	                )
+	            )
+	        )
+	    );
+	};
+	
+	module.exports = Cards;
 
 /***/ }
 /******/ ]);

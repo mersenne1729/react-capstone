@@ -5,7 +5,7 @@ var Banner = function() {
     
     return (
       <div className="banner">
-            <img class="banner-image" href="#" src="./assets/img/banner.jpg" />
+            <img className="banner-image" href="#" src="./assets/img/banner.jpg" />
         </div>
     );
 };
