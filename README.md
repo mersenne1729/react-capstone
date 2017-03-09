@@ -23,7 +23,7 @@ The app's functionality includes:
 * A summary link to callable data via *YouTube* on the various scales
 
 ## Technical
-The app is built with React, HTML, CSS, Java Script and jQuery it makes use of JSON calls to the *YouTube* Open Platform APIs to return the data. All data is held in memory during the user's session. It has been built to be fully responsive across mobile, tablet and desktop screen resolutions.
+The app is built with React, Redux, Webpack,  HTML, CSS, Java Script and jQuery it makes use of JSON calls to the *YouTube* Open Platform APIs to return the data. All data is held in memory during the user's session. It has been built to be fully responsive across mobile, tablet and desktop screen resolutions.
 
 ## Development Roadmap
 This is v1.0 of the app, but future enhancements are expected to include:
