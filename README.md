@@ -11,6 +11,7 @@ This site is built to promote the Kardashev Scale, which is a method of measurin
 ## Initial UX
 
 The initial mobile and desktop wireframes can be seen below:
+
 ![kardashev](https://cloud.githubusercontent.com/assets/22433378/23744892/f5dd9c72-04ad-11e7-9957-34bff7404fbd.png)
 
 ## Functionality
