@@ -2,24 +2,14 @@
 
 ## Synopsis
 
-I've made this to understand programing a littel and is designed to showcase the basics of Kardashev Scale concept, featuring a *YouTube* API.  
+I've made this to understand programing a littel more and crowbar in the Kardashev Scale concept. 
 
-## Motivation
+## Kardashev Scale
 
 This project plays with the Kardashev Scale, which is a method of measuring a civilization's level of technological advancement, based on the amount of energy a civilization is able to cultivate. The scale is hypothetical, and regards energy consumption on a cosmic scale. It was first proposed in 1964 by the Soviet astronomer Nikolai Kardashev, and various extensions of the scale have since been proposed, including a Type 0 and V. 
 
-## Initial UX
-
-The initial mobile and desktop wireframes can be seen below:
-
 ![kardashev](https://cloud.githubusercontent.com/assets/22433378/23744892/f5dd9c72-04ad-11e7-9957-34bff7404fbd.png)
 
-## Functionality
-
-The site's functionality includes:
-
-* Summaries of the relevant information for each level of the scale.
-* A summary link to callable data via *YouTube* on the various scales.
 
 ## Technical
 
