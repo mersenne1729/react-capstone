@@ -2,11 +2,11 @@
 
 ## Synopsis
 
-The site is designed to showcase the basics of Kardashev Scale concept, featuring a *YouTube* API.  
+I've made this to understand programing a littel and is designed to showcase the basics of Kardashev Scale concept, featuring a *YouTube* API.  
 
 ## Motivation
 
-This site is built to promote the Kardashev Scale, which is a method of measuring a civilization's level of technological advancement, based on the amount of energy a civilization is able to cultivate. The scale is hypothetical, and regards energy consumption on a cosmic scale. It was first proposed in 1964 by the Soviet astronomer Nikolai Kardashev, and various extensions of the scale have since been proposed, including a Type 0 and V. 
+This project plays with the Kardashev Scale, which is a method of measuring a civilization's level of technological advancement, based on the amount of energy a civilization is able to cultivate. The scale is hypothetical, and regards energy consumption on a cosmic scale. It was first proposed in 1964 by the Soviet astronomer Nikolai Kardashev, and various extensions of the scale have since been proposed, including a Type 0 and V. 
 
 ## Initial UX
 
@@ -24,13 +24,3 @@ The site's functionality includes:
 ## Technical
 
 The site is built with React, Redux, Webpack, and jQuery. It makes use of JSON calls to the *YouTube* Open Platform API to return the data. All data is held in memory during the user's session. It has been built to be fully responsive across mobile, tablet and desktop screen resolutions.
-
-## Development Roadmap
-
-This is v1.0 of the site, future enhancements are expected to include:
-* A redesign of the styling and the addition of more in-depth content to enhance user experience. 
-
-## User Stories
-* As someone with a casual interest in science I want to be able to find out what the Kardashev Scale is about.
-* As a student I want to know a little more about some of the possible futures that have scientific credibility.
-* As a keen reader of sci-fi I want to read something fun, entertaining and authentic.
